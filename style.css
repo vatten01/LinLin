@@ -596,6 +596,12 @@ h3 {
   line-height: 1.7;
 }
 
+.folder-status {
+  margin: 0.75rem 0 0;
+  color: var(--accent-dark);
+  line-height: 1.6;
+}
+
 .upload-input {
   position: absolute;
   width: 1px;
@@ -625,7 +631,12 @@ h3 {
   line-height: 1.7;
 }
 
+.photo-thumb-card {
+  position: relative;
+}
+
 .photo-thumb {
+  width: 100%;
   padding: 0.25rem;
   border: 2px solid transparent;
   border-radius: 1rem;
@@ -644,6 +655,19 @@ h3 {
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 0.75rem;
+}
+
+.photo-thumb-remove {
+  position: absolute;
+  top: 0.35rem;
+  right: 0.35rem;
+  width: 1.9rem;
+  height: 1.9rem;
+  border: none;
+  border-radius: 50%;
+  background: rgba(58, 36, 48, 0.72);
+  color: #fff;
+  cursor: pointer;
 }
 
 .stress-pill {
