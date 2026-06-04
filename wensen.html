@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wat we kunnen doen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="page-wishes">
+    <div class="ambient ambient-three"></div>
+    <div class="ambient ambient-four"></div>
+
+    <header class="site-header">
+      <a class="brand" href="index.html">Voor jou</a>
+      <nav class="site-nav">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link active" href="wensen.html">Wat we kunnen doen</a>
+        <a class="nav-link" href="reminder.html">Quote</a>
+        <a class="nav-link" href="stress.html">Stress uitlaten</a>
+        <a class="nav-link" href="bouquet.html">Boeket bloemen</a>
+      </nav>
+    </header>
+
+    <main class="wish-layout">
+      <section class="wish-intro reveal">
+        <h1>Wat we kunnen doen</h1>
+      </section>
+
+      <section class="wish-panel reveal-delay">
+        <div class="panel-header">
+          <div>
+            <p class="panel-kicker">Lijst</p>
+            <h2>Om te onthouden</h2>
+          </div>
+          <span class="counter" id="wish-counter">0 dingen</span>
+        </div>
+
+        <p class="wish-helper" id="wish-helper"></p>
+
+        <form class="wish-form" id="wish-form">
+          <label class="sr-only" for="wish-input">Nieuw idee</label>
+          <input
+            id="wish-input"
+            name="wish"
+            type="text"
+            placeholder="Bijvoorbeeld: even praten"
+            maxlength="120"
+            required
+          />
+          <button class="button button-primary" type="submit">Toevoegen</button>
+        </form>
+
+        <ul class="wish-list" id="wish-list"></ul>
+      </section>
+    </main>
+
+    <script src="wensen.js"></script>
+  </body>
+</html>

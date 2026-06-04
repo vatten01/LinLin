@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stress uitlaten</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="page-stress">
+    <div class="ambient ambient-three"></div>
+    <div class="ambient ambient-two"></div>
+
+    <header class="site-header">
+      <a class="brand" href="index.html">Voor jou</a>
+      <nav class="site-nav">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="wensen.html">Wat we kunnen doen</a>
+        <a class="nav-link" href="reminder.html">Quote</a>
+        <a class="nav-link active" href="stress.html">Stress uitlaten</a>
+        <a class="nav-link" href="bouquet.html">Boeket bloemen</a>
+      </nav>
+    </header>
+
+    <main class="stress-layout">
+      <section class="stress-copy reveal">
+        <h1>Stress uitlaten</h1>
+        <div class="stress-stats">
+          <span class="stress-pill"
+            >Teller: <strong id="hit-count">0</strong></span
+          >
+          <button class="button button-secondary" id="reset-bag" type="button">
+            Reset
+          </button>
+        </div>
+        <div class="stress-tools">
+          <label class="button button-secondary upload-label" for="bag-upload"
+            >Kies foto's</label
+          >
+          <input
+            class="upload-input"
+            id="bag-upload"
+            type="file"
+            accept="image/*"
+            multiple
+          />
+          <button
+            class="button button-secondary"
+            id="clear-photo"
+            type="button"
+          >
+            Wis foto's
+          </button>
+        </div>
+        <div
+          class="photo-picker"
+          id="photo-picker"
+          aria-label="Gekozen fotos"
+        ></div>
+        <p class="stress-note" id="stress-note"></p>
+      </section>
+
+      <section class="stress-stage reveal-delay">
+        <div class="bag-wrap">
+          <div class="bag-chain"></div>
+          <div class="bag-mount" aria-hidden="true"></div>
+          <button
+            class="punching-bag"
+            id="punching-bag"
+            type="button"
+            aria-label="Sla op de bokszak"
+          >
+            <span class="bag-strap bag-strap-left"></span>
+            <span class="bag-strap bag-strap-right"></span>
+            <span class="bag-cap"></span>
+            <span class="bag-highlight"></span>
+            <img
+              class="bag-photo"
+              id="bag-photo"
+              src="stress-photo.svg"
+              data-default-src="stress-photo.svg"
+              alt="Foto op de bokszak"
+            />
+            <span class="bag-label">Boks</span>
+          </button>
+          <div class="bag-shadow" aria-hidden="true"></div>
+          <div class="impact-ring" id="impact-ring" aria-hidden="true"></div>
+        </div>
+        <div class="impact-text" id="impact-text">tik</div>
+      </section>
+    </main>
+
+    <script src="drive-config.js"></script>
+    <script src="stress.js"></script>
+  </body>
+</html>

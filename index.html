@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voor jou</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="page-home">
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <header class="site-header">
+      <a class="brand" href="index.html">Voor jou</a>
+      <nav class="site-nav">
+        <a class="nav-link active" href="index.html">Home</a>
+        <a class="nav-link" href="wensen.html">Wat we kunnen doen</a>
+        <a class="nav-link" href="reminder.html">Quote</a>
+        <a class="nav-link" href="stress.html">Stress uitlaten</a>
+        <a class="nav-link" href="bouquet.html">Boeket bloemen</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero hero-quiet">
+        <div class="hero-copy reveal">
+          <h1>Voor ons</h1>
+          <div class="hero-actions">
+            <a class="button button-primary" href="wensen.html">Wat we kunnen doen</a>
+            <a class="button button-secondary" href="#spel">Spelletje</a>
+            <a class="button button-secondary" href="stress.html"
+              >Stress uitlaten</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="game-section reveal" id="spel">
+        <div class="section-heading">
+          <h2>OXO spelletje</h2>
+        </div>
+
+        <div class="game-shell">
+          <div class="game-topbar">
+            <div class="game-stats">
+              <span class="game-pill"
+                >Beurt: <strong id="current-player">Roos</strong></span
+              >
+              <span class="game-pill"
+                >Zetten: <strong id="move-count">0</strong></span
+              >
+              <button
+                class="button button-secondary game-reset"
+                id="reset-game"
+                type="button"
+              >
+                Opnieuw
+              </button>
+            </div>
+          </div>
+
+          <div class="oxo-board" id="oxo-board" aria-label="OXO spel"></div>
+          <p class="game-message" id="game-message"></p>
+        </div>
+      </section>
+    </main>
+
+    <script src="home.js"></script>
+  </body>
+</html>
