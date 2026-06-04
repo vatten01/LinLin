@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Het Goed Maken</title>
+  <title>Wat Kan Helpen</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
@@ -17,36 +17,37 @@
     <a class="brand" href="index.html">Voor Ons</a>
     <nav class="site-nav">
       <a class="nav-link" href="index.html">Home</a>
-      <a class="nav-link active" href="wensen.html">Het Goed Maken</a>
+      <a class="nav-link active" href="wensen.html">Wat Kan Helpen</a>
+      <a class="nav-link" href="reminder.html">Daily Reminder</a>
+      <a class="nav-link" href="stress.html">Stress Relief</a>
     </nav>
   </header>
 
   <main class="wish-layout">
     <section class="wish-intro reveal">
-      <p class="eyebrow">Voor ons samen</p>
-      <h1>Zaken die we kunnen doen om het goed te maken</h1>
+      <p class="eyebrow">Praktisch</p>
+      <h1>Dingen die kunnen helpen</h1>
       <p class="lead">
-        Geen grote woorden, maar kleine echte dingen die kunnen helpen om dichter bij elkaar te
-        komen. Hier staan al wat ideeen die ze kan doen.
+        Kort, rustig, concreet.
       </p>
     </section>
 
     <section class="wish-panel reveal-delay">
       <div class="panel-header">
         <div>
-          <p class="panel-kicker">Samen herstellen</p>
-          <h2>Wat we kunnen doen</h2>
+          <p class="panel-kicker">Checklist</p>
+          <h2>Voor elke dag</h2>
         </div>
         <span class="counter" id="wish-counter">14 ideeen</span>
       </div>
 
       <p class="wish-helper">
-        Vink dingen af, verwijder ze of voeg er zelf nog iets aan toe.
+        Afvinken, aanpassen of aanvullen.
       </p>
 
       <form class="wish-form" id="wish-form">
         <label class="sr-only" for="wish-input">Nieuw idee</label>
-        <input id="wish-input" name="wish" type="text" placeholder="Bijvoorbeeld: rustig praten zonder afleiding" maxlength="120" required>
+        <input id="wish-input" name="wish" type="text" placeholder="Bijvoorbeeld: even bellen" maxlength="120" required>
         <button class="button button-primary" type="submit">Toevoegen</button>
       </form>
 
@@ -69,6 +70,22 @@
         </li>
         <li class="wish-item">
           <label class="wish-check">
+            <input type="checkbox" aria-label="Vink Mij laten uitpraten zonder te onderbreken af">
+            <span class="wish-check-mark"></span>
+          </label>
+          <span class="wish-item-text">Mij laten uitpraten zonder te onderbreken</span>
+          <button class="wish-remove" type="button" aria-label="Verwijder Mij laten uitpraten zonder te onderbreken">x</button>
+        </li>
+        <li class="wish-item">
+          <label class="wish-check">
+            <input type="checkbox" aria-label="Vink Een rustig moment kiezen om af te spreken af">
+            <span class="wish-check-mark"></span>
+          </label>
+          <span class="wish-item-text">Een rustig moment kiezen om af te spreken</span>
+          <button class="wish-remove" type="button" aria-label="Verwijder Een rustig moment kiezen om af te spreken">x</button>
+        </li>
+        <li class="wish-item">
+          <label class="wish-check">
             <input type="checkbox" aria-label="Vink Samen wandelen en alles kalm bespreken af">
             <span class="wish-check-mark"></span>
           </label>
@@ -77,27 +94,11 @@
         </li>
         <li class="wish-item">
           <label class="wish-check">
-            <input type="checkbox" aria-label="Vink Samen koffie drinken en rustig praten af">
+            <input type="checkbox" aria-label="Vink Zeggen wat ze nodig heeft om zich beter te voelen af">
             <span class="wish-check-mark"></span>
           </label>
-          <span class="wish-item-text">Samen koffie drinken en rustig praten</span>
-          <button class="wish-remove" type="button" aria-label="Verwijder Samen koffie drinken en rustig praten">x</button>
-        </li>
-        <li class="wish-item">
-          <label class="wish-check">
-            <input type="checkbox" aria-label="Vink Een wandeling maken zonder telefoons af">
-            <span class="wish-check-mark"></span>
-          </label>
-          <span class="wish-item-text">Een wandeling maken zonder telefoons</span>
-          <button class="wish-remove" type="button" aria-label="Verwijder Een wandeling maken zonder telefoons">x</button>
-        </li>
-        <li class="wish-item">
-          <label class="wish-check">
-            <input type="checkbox" aria-label="Vink Een filmavond houden en gewoon dicht bij elkaar zijn af">
-            <span class="wish-check-mark"></span>
-          </label>
-          <span class="wish-item-text">Een filmavond houden en gewoon dicht bij elkaar zijn</span>
-          <button class="wish-remove" type="button" aria-label="Verwijder Een filmavond houden en gewoon dicht bij elkaar zijn">x</button>
+          <span class="wish-item-text">Zeggen wat ze nodig heeft om zich beter te voelen</span>
+          <button class="wish-remove" type="button" aria-label="Verwijder Zeggen wat ze nodig heeft om zich beter te voelen">x</button>
         </li>
       </ul>
     </section>
